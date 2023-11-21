@@ -5,11 +5,8 @@ from tkinter import *
 
 def main():
     janela = Tk()
-    janela.title('Shitdownd Timer')
+    janela.title('Shutdownd Timer')
 
-
-    menu = Label(janela, text = 'Press 1 to turnoff     Press 2 to Cancel       Press 3 to exit')
-    menu.grid(column=0, row = 0)
 
     bt_1 = Button(janela, text= 'Shutdown', command = shutdown)
     bt_1.grid(column=0, row=3)
@@ -23,7 +20,7 @@ def main():
 def cancel():
     exit()
 def shutdown():
-    t = int(input('how long do you want the computer to shut down in minutes '))
+    t = int(input('Type in secconds, for how long you want for your computer to stay on?: '))
     T = t * 60
     for i in range(T,0,-1):
         print(i)
